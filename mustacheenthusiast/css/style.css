@@ -16,6 +16,11 @@ imagen-base, #header a.logo img, #body > div ul li img, #body #featured img, #bo
   padding: 0;
 }
 
+texto-base, #header ul li a, #body > div .article h2, #body > div .article h4, #body > div ul li div h3, #body > div ul li div a.more, #body form #send {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: normal;
+}
+
 body {
   background: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -81,8 +86,6 @@ p a:hover {
   padding: 0 0 3px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-weight: normal;
 }
 
 #header ul li:hover {
@@ -135,9 +138,7 @@ p a:hover {
 }
 
 #body > div .article h2 {
-  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 25px;
-  font-weight: normal;
   margin: 0 0 30px;
 }
 
@@ -152,9 +153,7 @@ p a:hover {
   background: #252525;
   color: #fff;
   display: inline-block;
-  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 25px;
-  font-weight: normal;
   margin: 0 0 30px;
   padding: 8px 27px 10px;
 }
@@ -206,9 +205,7 @@ p a:hover {
 
 #body > div ul li div h3 {
   color: #252525;
-  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 25px;
-  font-weight: normal;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -227,8 +224,6 @@ p a:hover {
   text-decoration: none;
   text-transform: uppercase;
   background: #000;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-weight: normal;
 }
 
 #body > div ul li div a.more:hover {
@@ -380,9 +375,7 @@ p a:hover {
 #body form #send {
   background: #252525;
   color: #fff;
-  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 15px;
-  font-weight: normal;
   display: inline-block;
   padding: 20px 28px;
   width: auto;

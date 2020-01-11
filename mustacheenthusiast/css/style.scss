@@ -37,6 +37,11 @@ imagen-base {
     padding: 0;
 }
 
+texto-base {
+    font-family: $arial_black;
+    font-weight: normal; 
+}
+
 body {
     background: $blanco;
     font-family: $arial;
@@ -100,8 +105,8 @@ p {
         a {
             // Mixin
             @include enlaces(inline-block, $grisOscuro, 14px, 0, 0 0 3px);
-            font-family: $arial_black;
-            font-weight: normal;
+            // Extend
+            @extend texto-base;
         }
 
         &:hover {
@@ -156,9 +161,9 @@ p {
         width: 560px;
 
         h2 {
-            font-family: $arial_black;
+            // Extend
+            @extend texto-base;
             font-size: 25px;
-            font-weight: normal;
             margin: 0 0 30px;
         }
 
@@ -170,12 +175,12 @@ p {
         }
 
         h4 {
+            // Extend
+            @extend texto-base;
             background: $grisOscuro;
             color: $blanco;
             display: inline-block;
-            font-family: $arial_black;
             font-size: 25px;
-            font-weight: normal;
             margin: 0 0 30px;
             padding: 8px 27px 10px;
         }
@@ -225,10 +230,10 @@ p {
                 width: 558px;
 
                 h3 {
+                    // Extend
+                    @extend texto-base;
                     color: $grisOscuro;
-                    font-family: $arial_black;
                     font-size: 25px;
-                    font-weight: normal;
                     margin: 0;
                     padding: 0;
                     text-transform: uppercase;
@@ -241,9 +246,9 @@ p {
                 a.more {
                     // Mixin
                     @include enlaces(inline-block, $blanco, 18px, 0, 8px 28px);
+                    // Extend
+                    @extend texto-base;
                     background: $negro;
-                    font-family: $arial_black;
-                    font-weight: normal;
 
                     &:hover {
                         color: $grisOscuro;
@@ -376,11 +381,11 @@ p {
     }
 
     #send {
+        // Extend
+        @extend texto-base;
         background: $grisOscuro;
         color: $blanco;
-        font-family: $arial_black;
         font-size: 15px;
-        font-weight: normal;
         display: inline-block;
         padding: 20px 28px;
         width: auto;
