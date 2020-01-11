@@ -29,19 +29,25 @@ body {
 	min-width: 960px;
 	padding: 0;
 }
+
+// Nesting
 p {
 	color: #252525;
 	line-height: 24px;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    
+    a {
+        color: #252525;
+        text-decoration: underline;
+
+        &:hover {
+            color: #898989;
+
+        }
+    }
 }
-p a {
-	color: #252525;
-	text-decoration: underline;
-}
-p a:hover {
-	color: #898989;
-}
+
 #header {
 	margin: 0 auto;
 	padding: 44px 0 50px;
