@@ -30,6 +30,13 @@ $arial_black: "Arial Black", Gadget, sans-serif;
     width: 596px;
 }
 
+// Extend
+imagen-base {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	background: $blanco;
 	font-family: $arial;
@@ -73,10 +80,9 @@ p {
     width: 340px;
     
     img {
-        border: 0;
+        // Extend
+        @extend imagen-base;
         display: block;
-        margin: 0;
-        padding: 0;
     }
 }
 
@@ -205,10 +211,9 @@ p {
             }
 
             img {
+                // Extend
+                @extend imagen-base;
                 border: 0;
-                display: block;
-                margin: 0;
-                padding: 0;
                 opacity: 0.8;
                 transition: 0.5s ease-in-out;
             }
@@ -259,10 +264,9 @@ p {
     width: 100%;
     
     img {
+        // Extend
+        @extend imagen-base;
         border: 0;
-        display: block;
-        margin: 0;
-        padding: 0;
         width: 100%;
     }
 
@@ -332,10 +336,9 @@ p {
             text-align: center;
 
             img {
+                // Extend
+                @extend imagen-base;
                 border: 2px solid $grisMasOscuro;
-                display: block;
-                margin: 0;
-                padding: 0;
                 opacity: .8;
                 transition: 0.5s ease-in-out;
             }
