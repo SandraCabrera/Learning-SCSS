@@ -71,15 +71,15 @@ p a:hover {
 }
 
 #header ul li a {
-  color: #252525;
   display: inline-block;
-  font-family: "Arial Black", Gadget, sans-serif;
+  color: #252525;
   font-size: 14px;
-  font-weight: normal;
   margin: 0;
   padding: 0 0 3px;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: normal;
 }
 
 #header ul li:hover {
@@ -219,16 +219,16 @@ p a:hover {
 }
 
 #body > div ul li div a.more {
-  background: #000;
-  color: #fff;
   display: inline-block;
-  font-family: "Arial Black", Gadget, sans-serif;
+  color: #fff;
   font-size: 18px;
-  font-weight: normal;
   margin: 0;
   padding: 8px 28px;
   text-decoration: none;
   text-transform: uppercase;
+  background: #000;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: normal;
 }
 
 #body > div ul li div a.more:hover {
@@ -285,15 +285,15 @@ p a:hover {
 }
 
 #body #featured div a {
-  background: #0ba39c;
-  color: #fff;
   display: inline-block;
+  color: #fff;
   font-size: 16px;
   margin: 15px 0 0;
   padding: 26px 27px 22px;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  background: #0ba39c;
+  text-align: center;
 }
 
 #body #featured div a:hover {
@@ -316,16 +316,16 @@ p a:hover {
 }
 
 #body > ul li a {
-  color: #000;
   display: block;
-  font-family: poller_oneregular;
+  color: #000;
   font-size: 20px;
-  font-weight: normal;
   margin: 0;
   padding: 0;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: poller_oneregular;
+  font-weight: normal;
+  text-align: center;
 }
 
 #body > ul li a img {

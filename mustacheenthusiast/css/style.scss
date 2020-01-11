@@ -6,6 +6,17 @@
 $arial: Arial, Helvetica, sans-serif;
 $arial_black: "Arial Black", Gadget, sans-serif;
 
+// Mixin
+@mixin enlaces($display, $color, $fontSize, $margin, $padding) {
+    display: $display;
+    color: $color;
+    font-size: $fontSize;
+    margin: $margin;
+    padding: $padding;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 body {
 	background: $blanco;
 	font-family: $arial;
@@ -68,15 +79,10 @@ p {
         padding: 0 19px;
 
         a {
-            color: $grisOscuro;
-            display: inline-block;
+            // Mixin
+            @include enlaces(inline-block, $grisOscuro, 14px, 0, 0 0 3px);
             font-family: $arial_black;
-            font-size: 14px;
             font-weight: normal;
-            margin: 0;
-            padding: 0 0 3px;
-            text-decoration: none;
-            text-transform: uppercase;
         }
 
         &:hover {
@@ -215,16 +221,11 @@ p {
                 }
     
                 a.more {
+                    // Mixin
+                    @include enlaces(inline-block, $blanco, 18px, 0, 8px 28px);
                     background: $negro;
-                    color: $blanco;
-                    display: inline-block;
                     font-family: $arial_black;
-                    font-size: 18px;
                     font-weight: normal;
-                    margin: 0;
-                    padding: 8px 28px;
-                    text-decoration: none;
-                    text-transform: uppercase;
 
                     &:hover {
                         color: $grisOscuro;
@@ -284,15 +285,10 @@ p {
         }
 
         a {
+            // Mixin
+            @include enlaces(inline-block, $blanco, 16px, 15px 0 0, 26px 27px 22px);
             background: $turquesa;
-            color: $blanco;
-            display: inline-block;
-            font-size: 16px;
-            margin: 15px 0 0;
-            padding: 26px 27px 22px;
             text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
 
             &:hover {
                 background: #1fc3bc;
@@ -316,16 +312,11 @@ p {
         width: 300px;
 
         a {
-            color: $negro;
-            display: block;
+            // Mixin
+            @include enlaces(block, $negro, 20px, 0, 0);
             font-family: poller_oneregular;
-            font-size: 20px;
             font-weight: normal;
-            margin: 0;
-            padding: 0;
             text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
 
             img {
                 border: 2px solid $grisMasOscuro;
