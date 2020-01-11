@@ -82,7 +82,11 @@ p a:hover {
   text-transform: uppercase;
 }
 
-#header ul li a:hover, #header ul li.selected a {
+#header ul li:hover {
+  color: #0ba39c;
+}
+
+#header ul li.selected a {
   color: #0ba39c;
 }
 

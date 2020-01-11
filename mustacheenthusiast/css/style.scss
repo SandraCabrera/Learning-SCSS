@@ -54,42 +54,57 @@ p {
 	text-align: center;
 	width: 960px;
 }
+
+// Nesting
+
 #header a.logo {
 	display: block;
 	margin: 0 auto;
 	padding: 0;
-	width: 340px;
+    width: 340px;
+    
+    img {
+        border: 0;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
 }
-#header a.logo img {
-	border: 0;
-	display: block;
-	margin: 0;
-	padding: 0;
-}
+
+// Nesting
+
 #header ul {
 	margin: 0;
-	padding: 56px 0 0;
+    padding: 56px 0 0;
+    
+    li {
+        display: inline;
+        list-style: none;
+        margin: 0;
+        padding: 0 19px;
+
+        a {
+            color: #252525;
+            display: inline-block;
+            font-family: $arial_black;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0 0 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            color: #0ba39c;  
+        }
+    }
+
+    li.selected a {
+        color: #0ba39c;
+    }
 }
-#header ul li {
-	display: inline;
-	list-style: none;
-	margin: 0;
-	padding: 0 19px;
-}
-#header ul li a {
-	color: #252525;
-	display: inline-block;
-	font-family: $arial_black;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-	padding: 0 0 3px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-#header ul li a:hover, #header ul li.selected a {
-	color: #0ba39c;
-}
+
 #body {
 	margin: 0;
 	padding: 0 0 30px;
