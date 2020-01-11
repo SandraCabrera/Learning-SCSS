@@ -74,7 +74,8 @@ p {
     margin: 0 auto;
     padding: 44px 0 50px;
     text-align: center;
-    width: 960px;
+    // Operators
+    width: 480px * 2;
 }
 
 // Nesting
@@ -158,7 +159,8 @@ p {
     .article {
         margin: 0 auto;
         padding: 30px 30px 0;
-        width: 560px;
+        // Operators
+        width: 220px * 2 + 120;
 
         h2 {
             // Extend
