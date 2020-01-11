@@ -354,7 +354,7 @@ p a:hover {
   width: 620px;
 }
 
-#body form input, #body form textarea {
+#body form input {
   border: 2px solid #252525;
   color: #252525;
   font-family: Arial, Helvetica, sans-serif;
@@ -368,6 +368,16 @@ p a:hover {
 }
 
 #body form textarea {
+  border: 2px solid #252525;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 37px;
+  padding: 20px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 596px;
   height: 175px;
   overflow: auto;
   resize: none;

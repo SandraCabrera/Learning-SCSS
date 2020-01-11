@@ -369,43 +369,60 @@ p {
     }
 }
 
+// Nesting
+
 #body form {
 	margin: 0 auto;
 	padding: 24px 0 0;
-	width: 620px;
-}
-#body form input, #body form textarea {
-	border: 2px solid #252525;
-	color: #252525;
-	font-family: $arial;
-	font-size: 15px;
-	font-weight: normal;
-	margin: 0 0 37px;
-	padding: 20px 10px;
-	text-align: center;
-	text-transform: uppercase;
-	width: 596px;
-}
-#body form textarea {
-	height: 175px;
-	overflow: auto;
-	resize: none;
-}
-#body form #send {
-	background: #252525;
-	color: #fff;
-	font-family: $arial_black;
-	font-size: 15px;
-	font-weight: normal;
-	display: inline-block;
-	padding: 20px 28px;
-	width: auto;
-}
-#body form #send:hover {
-	background: #fff;
-	color: #252525;
-	cursor: pointer;
-}
+    width: 620px;
+    
+    input {
+        border: 2px solid #252525;
+        color: #252525;
+        font-family: $arial;
+        font-size: 15px;
+        font-weight: normal;
+        margin: 0 0 37px;
+        padding: 20px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 596px;
+    }
+
+    textarea {
+        border: 2px solid #252525;
+        color: #252525;
+        font-family: $arial;
+        font-size: 15px;
+        font-weight: normal;
+        margin: 0 0 37px;
+        padding: 20px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 596px;
+        height: 175px;
+        overflow: auto;
+        resize: none;
+    }
+
+    #send {
+        background: #252525;
+        color: #fff;
+        font-family: $arial_black;
+        font-size: 15px;
+        font-weight: normal;
+        display: inline-block;
+        padding: 20px 28px;
+        width: auto;
+
+        &:hover {
+            background: #fff;
+            color: #252525;
+            cursor: pointer;
+        }
+    }
+} 
+
 #footer {
 	background: #252525;
 	margin: 0;
