@@ -38,23 +38,23 @@ imagen-base {
 }
 
 body {
-	background: $blanco;
-	font-family: $arial;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 1;
-	margin: 0;
-	min-width: 960px;
-	padding: 0;
+    background: $blanco;
+    font-family: $arial;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    min-width: 960px;
+    padding: 0;
 }
 
 // Nesting
 p {
-	color: $grisOscuro;
-	line-height: 24px;
-	margin: 0;
+    color: $grisOscuro;
+    line-height: 24px;
+    margin: 0;
     padding: 0;
-    
+
     a {
         color: $grisOscuro;
         text-decoration: underline;
@@ -66,19 +66,19 @@ p {
 }
 
 #header {
-	margin: 0 auto;
-	padding: 44px 0 50px;
-	text-align: center;
-	width: 960px;
+    margin: 0 auto;
+    padding: 44px 0 50px;
+    text-align: center;
+    width: 960px;
 }
 
 // Nesting
 #header a.logo {
-	display: block;
-	margin: 0 auto;
-	padding: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
     width: 340px;
-    
+
     img {
         // Extend
         @extend imagen-base;
@@ -88,9 +88,9 @@ p {
 
 // Nesting
 #header ul {
-	margin: 0;
+    margin: 0;
     padding: 56px 0 0;
-    
+
     li {
         display: inline;
         list-style: none;
@@ -105,7 +105,7 @@ p {
         }
 
         &:hover {
-            color: $turquesa;  
+            color: $turquesa;
         }
     }
 
@@ -115,22 +115,22 @@ p {
 }
 
 #body {
-	margin: 0;
-	padding: 0 0 30px;
-	text-align: center;
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
 }
 
 // Nesting
 #body h1 {
-	color: $blanco;
-	display: inline;
-	font-family: poller_oneregular;
-	font-size: 35px;
-	font-weight: normal;
-	margin: 0;
-	padding: 0;
+    color: $blanco;
+    display: inline;
+    font-family: poller_oneregular;
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
-    
+
     span {
         background: $grisOscuro;
         display: inline-block;
@@ -139,11 +139,11 @@ p {
 }
 
 // Nesting
-#body > div {
-	margin: 0 auto;
-	padding: 0;
+#body>div {
+    margin: 0 auto;
+    padding: 0;
     width: 960px;
-    
+
     img {
         border: 2px solid #292929;
         margin: 24px 0 0;
@@ -223,7 +223,7 @@ p {
                 margin: 0;
                 padding: 63px 0 20px;
                 width: 558px;
-    
+
                 h3 {
                     color: $grisOscuro;
                     font-family: $arial_black;
@@ -233,11 +233,11 @@ p {
                     padding: 0;
                     text-transform: uppercase;
                 }
-    
+
                 p {
                     padding: 30px 30px 18px;
                 }
-    
+
                 a.more {
                     // Mixin
                     @include enlaces(inline-block, $blanco, 18px, 0, 8px 28px);
@@ -258,11 +258,11 @@ p {
 
 // Nesting
 #body #featured {
-	margin: 0 0 13px;
-	padding: 0;
-	position: relative;
+    margin: 0 0 13px;
+    padding: 0;
+    position: relative;
     width: 100%;
-    
+
     img {
         // Extend
         @extend imagen-base;
@@ -315,12 +315,12 @@ p {
 }
 
 // Nesting
-#body > ul {
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 24px 0 0;
+#body>ul {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 24px 0 0;
     width: 960px;
-    
+
     li {
         display: block;
         float: left;
@@ -343,7 +343,7 @@ p {
                 transition: 0.5s ease-in-out;
             }
 
-            &:hover img{
+            &:hover img {
                 opacity: 1;
             }
 
@@ -358,10 +358,10 @@ p {
 
 // Nesting
 #body form {
-	margin: 0 auto;
-	padding: 24px 0 0;
+    margin: 0 auto;
+    padding: 24px 0 0;
     width: 620px;
-    
+
     input {
         // Mixin
         @include formulario();
@@ -391,70 +391,70 @@ p {
             cursor: pointer;
         }
     }
-} 
+}
 
 #footer {
-	background: $grisOscuro;
-	margin: 0;
+    background: $grisOscuro;
+    margin: 0;
     padding: 36px 0 42px;
 }
 
 // Nesting
 #footer div {
-        margin: 0 auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 960px;
+
+    p {
+        color: $blanco;
+        float: left;
+        line-height: 44px;
+        margin: 0 0 0 10px;
+        padding: 0;
+    }
+
+    ul {
+        display: block;
+        float: right;
+        margin: 0;
         overflow: hidden;
         padding: 0;
-        width: 960px;
+        width: 256px;
 
-        p {
-            color: $blanco;
-            float: left;
-            line-height: 44px;
-            margin: 0 0 0 10px;
-            padding: 0;
-        }
-
-        ul {
+        li {
             display: block;
-            float: right;
-            margin: 0;
-            overflow: hidden;
+            float: left;
+            list-style: none;
+            margin: 0 10px;
             padding: 0;
-            width: 256px;
+            width: 44px;
 
-            li {
+            a {
+                background: url(../images/icons.jpg) no-repeat 0 0;
                 display: block;
-                float: left;
-                list-style: none;
-                margin: 0 10px;
+                height: 44px;
+                margin: 0;
                 padding: 0;
+                text-indent: -99999px;
                 width: 44px;
+            }
 
-                a {
-                    background: url(../images/icons.jpg) no-repeat 0 0;
-                    display: block;
-                    height: 44px;
-                    margin: 0;
-                    padding: 0;
-                    text-indent: -99999px;
-                    width: 44px;
+            #twitter {
+                background-position: 0 0;
+
+                &:hover {
+                    background-position: -44px 0;
                 }
+            }
 
-                #twitter {
-                    background-position: 0 0;
+            #facebook {
+                background-position: 0 -44px;
 
-                    &:hover {
-                        background-position: -44px 0;
-                    }
+                &:hover {
+                    background-position: -44px -44px;
                 }
-
-                #facebook {
-                    background-position: 0 -44px;
-
-                    &:hover {
-                        background-position: -44px -44px;
-                    }
-                }
+            }
 
             #googleplus {
                 background-position: 0 -88px;
