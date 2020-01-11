@@ -423,14 +423,15 @@ p {
     }
 } 
 
-// Nesting
-
 #footer {
 	background: #252525;
 	margin: 0;
     padding: 36px 0 42px;
-    
-    div {
+}
+
+// Nesting
+ 
+#footer div {
         margin: 0 auto;
         overflow: hidden;
         padding: 0;
@@ -486,20 +487,19 @@ p {
                     }
                 }
 
-                #googleplus {
-                    background-position: 0 -88px;
+            #googleplus {
+                background-position: 0 -88px;
 
-                    &:hover {
-                        background-position: -44px -88px;
-                    }
+                &:hover {
+                    background-position: -44px -88px;
                 }
+            }
 
-                #pinterest {
-                    background-position: 0 -132px;
+            #pinterest {
+                background-position: 0 -132px;
 
-                    &:hover {
-                        background-position: -44px -132px;
-                    }
+                &:hover {
+                    background-position: -44px -132px;
                 }
             }
         }
